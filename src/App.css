@@ -1,5 +1,5 @@
 .App-header {
-  background: linear-gradient(-45deg, #37146e, #6d0ebb);
+  background: linear-gradient(45deg, #363636, #444444,  #6e6e6e);
   min-height: 100vh;
   display: flexbox;
   position: relative;
@@ -8,6 +8,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+h1 {
+  margin: 20px;
+}
+
+h3 {
+  margin: 20px;
 }
 
 .menu {
@@ -32,20 +40,14 @@
 }
 
 .menu a:hover {
-  background-color: #7e16d3;
+  background-color: #6e6e6e;
   color: black;
+  transition: 0.5s;
 }
 
-.card {
-  position: relative;
-  text-align: center;
-  width: 450px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  background-color: #7e16d3;
-  top: 20px;
-  left: 20px;
+.container {
+  display: flex;
+  align-items: center;
 }
 
 .card-img {
@@ -67,6 +69,56 @@
   margin-bottom: 20px;
 }
 
+.cardMe {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  margin: 20px;
+  width: 450px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #6e6e6e, #444444);
+  overflow: hidden;
+  background-color: #6e6e6e;
+}
+
+.tableEx{
+  background: linear-gradient(-45deg, #6e6e6e, #444444);
+  border-collapse: collapse;
+  table-layout: auto;
+  border-radius: 10px;
+  margin: 20px;
+  width: 100%;
+  height: 1050px;
+  padding: 20px;
+}
+
+th, td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.cardExperiencia {
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0px #000000;
+  overflow: hidden;
+  background: linear-gradient(45deg, #363636, #444444,  #6e6e6e);
+  margin: 20px;
+}
+
+.cardExperiencia2 {
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0px #000000;
+  overflow: hidden;
+  background: linear-gradient(45deg, #363636, #444444,  #6e6e6e);
+  margin: 20px;
+}
+
 .cardPerfil{
   position: absolute;
   display: flex;
@@ -76,9 +128,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background-color: #7e16d3;
-  top: 700px;
-  left: 30px;
+  background-color: #6e6e6e;
 }
 
 .cardContacto {
@@ -90,9 +140,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background-color: #7e16d3;
-  top: 45px;
-  left: 20px;
+  background-color: #6e6e6e;
 }
 
 .cardEducacion {
@@ -104,39 +152,13 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background-color: #7e16d3;
-  top: 650px;
-  left: 500px;
+  background-color: #6e6e6e;
 }
 
 .cardPe {
   position: absolute;
   top: 50px;
   left: 650px;
-}
-
-.cardExperiencia {
-  position: absolute;
-  text-align: center;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  background-color: #7e16d3;
-  top: 170px;
-  left: 560px;
-}
-
-.cardExperiencia2 {
-  position: absolute;
-  text-align: center;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  background-color: #7e16d3;
-  top: 80px;
-  left: 950px;
 }
 
 .cardIntereses {
@@ -148,9 +170,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background-color: #7e16d3;
-  top: 650px;
-  left: 1030px;
+  background-color: #6e6e6e;
 }
 
 .cardHabilidades {
@@ -162,9 +182,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background-color: #7e16d3;
-  top: 1000px;
-  left: 1030px;
+  background-color: #6e6e6e;
 }
 
 .skills {
@@ -179,4 +197,115 @@
   border-radius: 8px;
   margin: 5px;
   font-size: 16px;
+}
+
+.languajes {
+  background: linear-gradient(-45deg, #6e6e6e, #444444);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+  margin: 20px;
+  width: 510px;
+}
+
+.progressBarHtml {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 500px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.progressHtml {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  height: 100%;
+  width: 75%;
+  transition: width 0.5s ease;
+}
+
+.progressBarCss {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 500px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.progressCss {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  height: 100%;
+  width: 65%;
+  transition: width 0.5s ease;
+}
+
+.progressBarPhp {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 500px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.progressPhp {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  height: 100%;
+  width: 50%;
+  transition: width 0.5s ease;
+}
+
+.progressBarPython {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 500px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.progressPython {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  height: 100%;
+  width: 30%;
+  transition: width 0.5s ease;
+}
+
+.progressBarJavaScript {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 500px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.progressJavaScript {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  height: 100%;
+  width: 20%;
+  transition: width 0.5s ease;
+}
+
+.progressBarSQL {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 500px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.progressSQL {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  height: 100%;
+  width: 70%;
+  transition: width 0.5s ease;
 }

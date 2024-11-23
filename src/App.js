@@ -23,27 +23,42 @@ function App() {
             <div className='navbar'>
               <Navbar />
             </div>
-            <div className='cardMe'>
-              <Card1 />
+            <div className='container'>
+              <div className='cardMe'>
+                <Card1 />
+              </div>
+              <table className='tableEx'>
+                <h1>Experiencia</h1>
+                <tr>
+                  <td>
+                    <div className='cardExW'>
+                      <Card5 />
+                    </div>
+                  </td>
+                  <td>
+                    <div className='cardExP'>
+                      <Card8 />
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              {/* <div className='cardEd'>
+              < Card4/>
+              </div> */}
+              {/* <div className='cardEx'>
+                <Card5 />
+              </div> */}
+              {/* <div className='cardIn'>
+                <Card6 />
+              </div> */}
+              {/* <div>
+                <Card7 />
+              </div> */}
             </div>
-            <div className='cardPe'>
-              <h1>Experiencia</h1>
+            <div class="languajesPor">
+              <Card2 />  
             </div>
-            <div className='cardEx2'>
-              <Card8 />
-            </div>
-            <div className='cardEd'>
-             < Card4/>
-            </div>
-            <div className='cardEx'>
-              <Card5 />
-            </div>
-            <div className='cardIn'>
-              <Card6 />
-            </div>
-            <div>
-              <Card7 />
-            </div>
+            
           </header>
         </div>
     </BrowserRouter>

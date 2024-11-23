@@ -7,7 +7,8 @@ const Card5 = () => {
             <img src={wiki} className="card-img" />
                 <div class="card-content">
                    <h2 class="card-title">Wiki Stud</h2>
-                       <p>Wiki Stud - 2022</p>
+                   <h5>Repositorio web desarrollado en Php para facilitar el repaso de temas especificos</h5>
+                    <p>2022</p>
                </div>
         </div>
     )

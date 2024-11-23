@@ -1,13 +1,14 @@
 import React from "react";
-import wiki from '../../img/Wiki.png';
+import py from '../../img/3x3.png';
 
 const Card8 = () => {
     return( 
         <div class="cardExperiencia2">
-            <img src={wiki} className="card-img" />
+            <img src={py} className="card-img" />
                 <div class="card-content">
-                   <h2 class="card-title">Vendedor de remates el primo</h2>
-                       <p>2018 - Actualidad</p>
+                   <h2 class="card-title">Software en python</h2>
+                   <h5>Software desarrollado en el lenguaje python, que se enfoca en resolver ecuaciones 3x3</h5>
+                    <p>2023</p>
                </div>
         </div>
     )
