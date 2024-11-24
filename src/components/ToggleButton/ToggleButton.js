@@ -1,39 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState } from "react"; //importación por defecto
 
-// function ToggleButton() {
-//   // Declaramos una variable de estado booleana y su función para actualizarla
-//   const [isActive, setIsActive] = useState(false);
+const ToggleBackgroundButton = () => { //creación de la función para el componente
+  const [isDefaultGradient, setIsDefaultGradient] = useState(true);
 
-//   // Función que cambia el estado al valor opuesto
-//   const toggleState = () => {
-//     setIsActive(prevState => !prevState);
-//   };
+  const handleToggle = () => {
+    setIsDefaultGradient(!isDefaultGradient);
 
-//   return (
-//     <div>
-//       <p>El estado actual es: {isActive ? 'Activo' : 'Inactivo'}</p>
-//       <button className='ToggleButton' onClick={toggleState}>
-//         {isActive ? 'Desactivar' : 'Activar'}
-//       </button>
-//     </div>
-//   );
-// }
-
-function ToggleButton() {
-  // Inicializamos el estado con un color por defecto
-  const [bgColor, setBgColor] = useState('#282c34');
-
-  // Función para cambiar el color de fondo
-  const changeColor = () => {
-    // Cambia el color a un nuevo color (puedes usar una lógica diferente o aleatoria)
-    setBgColor(bgColor === '#282c34' ? 'white' : '#282c34');
+    document.body.style.background = isDefaultGradient
+      ? "linear-gradient(45deg, #1e3c72, #2a5298)" // Gradiente alternativo
+      : "linear-gradient(45deg, #363636, #444444, #6e6e6e)"; // Gradiente original
   };
 
   return (
-    <div style={{ backgroundColor: bgColor, height: '100vh', padding: '20px' }}>
-      <button onClick={changeColor}>Cambiar color de fondo</button>
-    </div>
+    <button
+      onClick={handleToggle}
+      style={{
+        backgroundColor: "#444",
+        color: "white",
+        padding: "10px 20px",
+        border: "none",
+        borderRadius: "5px",
+        cursor: "pointer",
+        marginTop: "20px",
+      }}
+    >
+      Cambiar tema
+    </button>
   );
-}
+};
 
-export default ToggleButton;
+export default ToggleBackgroundButton; //exportación del componente

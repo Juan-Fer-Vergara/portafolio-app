@@ -12,15 +12,15 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} /*Colores y espacios fijos para el cuerpo*/
 
 h1 {
   margin: 20px;
-}
+} /*Espacios fijpos para textos h1*/
 
 h3 {
   margin: 20px;
-}
+} /*Espacios fijos para textos h3*/
 
 .menu {
   display: flex;
@@ -47,12 +47,12 @@ h3 {
   background-color: #6e6e6e;
   color: black;
   transition: 0.5s;
-}
+} /*Espacios, colores y hovers para el menu*/
 
 .container {
   display: flex;
   align-items: center;
-}
+} /*Espacios para el primer contenedor de cards*/
 
 .card-img {
   width: 450px;
@@ -79,7 +79,7 @@ h3 {
   font-size: 1em;
   color: #555;
   margin-bottom: 20px;
-}
+} /*Espacioos tamaños y colores fijos para los elementos de las cards*/
 
 .cardMe {
   display: flex;
@@ -94,7 +94,7 @@ h3 {
   box-shadow: 0 4px 8px #000000;
   overflow: hidden;
   background-color: #6e6e6e;
-}
+} /*Espacios y tamaños para la card de mi información*/
 
 .tableEx{
   background: linear-gradient(-45deg, #6e6e6e, #444444);
@@ -104,9 +104,9 @@ h3 {
   border-radius: 10px;
   margin: 20px;
   width: 100%;
-  height: 1050px;
+  height: 890px;
   padding: 20px;
-}
+} /*Colores, espacios de la tabla con mis proyectos*/
 
 th, td {
   padding: 10px;
@@ -131,12 +131,12 @@ th, td {
   overflow: hidden;
   background: linear-gradient(45deg, #363636, #444444,  #6e6e6e);
   margin: 20px;
-}
+} /*Tamaños espacios de las cards con mis proyectos*/
 
 .container2 {
   display: flex;
   align-items: flex-start;
-}
+} /*Espacios del segundo container*/
 
 .educacion {
   background: linear-gradient(-45deg, #6e6e6e, #444444);
@@ -148,8 +148,8 @@ th, td {
   width: 100%;
   height: 620px;
   padding: 20px;
-}
-
+} /*Estilos colores y espacios para la card con los lenguajes*/
+ 
 .languajes {
   background: linear-gradient(-45deg, #6e6e6e, #444444);
   box-shadow: 0 4px 8px #000000;
@@ -260,7 +260,7 @@ th, td {
   height: 100%;
   width: 70%;
   transition: width 0.5s ease;
-}
+} /*porcentajes, colores y espacios de cada lenguaje*/
 
 .cardEducacion {
   width: 300px;
@@ -278,7 +278,7 @@ th, td {
   overflow: hidden;
   background: linear-gradient(-45deg, #363636, #444444,  #6e6e6e);
   margin: 20px;
-}
+} /*Colores y espacios de las cards sobre mi estudio*/
 
 .container3 {
   display: flex;
@@ -288,7 +288,7 @@ th, td {
   align-items: center;
   justify-content: center;
   margin: 20px;
-}
+} /*Espacios del ultimo contenedor*/
 
 .cardIntereses {
   display: flex;
@@ -324,7 +324,7 @@ th, td {
   border-radius: 8px;
   margin: 5px;
   font-size: 16px;
-}
+} /*Espacios, colores de las 2 ultimas cards*/
 
 footer {
   background-color: #363636;
@@ -332,4 +332,4 @@ footer {
   padding: 20px;
   text-align: center;
   margin: 20px;
-}
+} /*Espacios, colores del footer para que siempre este al final*/

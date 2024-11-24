@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"; //importación por defecto
 
-const Card6 = () => {
+const Card6 = () => { //creación de función para el componente
     return( 
         <div class="cardIntereses">
-                <div class="card-content">
+                <div class="card-content"> {/*Creación de los contenedores con sus respectivas clases*/}
                     <h2 class="card-title">INTERESES</h2>
                         <ul>
                             <li>Motores</li>
@@ -11,10 +11,10 @@ const Card6 = () => {
                             <li>Bases de datos</li>
                             <li>Graffiti</li>
                             <li>Viajar</li>
-                        </ul>
+                        </ul> {/*Insertar informaciójn para la card*/}
                 </div>
         </div>
     )
 }
 
-export default Card6
+export default Card6 //exportación del componente

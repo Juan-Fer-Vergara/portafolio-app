@@ -1,13 +1,13 @@
-import React from "react";
+import React from "react"; //importación por defecto
 
-const Card2 = () => {
+const Card2 = () => { //creación de la función para el componnte
     return( 
-        <div class="languajes">
+        <div class="languajes"> {/*Creación del contenedor para los porcentajes de conocimiento de cada lenguaje con sus respectivas clases*/}
                 <h1>Lenguajes</h1>
                 <br />
-                <h3>HTML</h3>
-                <div class="progressBarHtml">
-                    <div class="progressHtml"></div>
+                <h3>HTML</h3> {/*Container para HTML*/}
+                <div class="progressBarHtml"> {/*Barra total de conocimiento*/}
+                    <div class="progressHtml"></div> {/*Indicador de conocimiento*/}
                 </div>
                 <br />
                 <h3>CSS</h3>
@@ -39,4 +39,4 @@ const Card2 = () => {
     )
 }
 
-export default Card2
+export default Card2 //creación de la función para el componente
